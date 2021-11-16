@@ -899,6 +899,36 @@ body.ie ._ibg img {
   padding: 5px 0;
   position: relative;
 }
+@media (any-hover: hover) {
+  .menu__item:hover .menu__sub-list {
+    transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .menu__item:hover .menu__arrow {
+    transform: rotate(-180deg);
+  }
+  .menu__item:hover .menu__arrow,
+.menu__item:hover .menu__link {
+    color: #E89F71;
+  }
+}
+@media (min-width: 767.98px) {
+  .menu__item._hover .menu__sub-list {
+    transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .menu__item._hover .menu__arrow {
+    transform: rotate(-180deg);
+  }
+  .menu__item._hover .menu__arrow,
+.menu__item._hover .menu__link {
+    color: #E89F71;
+  }
+}
 .menu__link {
   font-weight: 500;
   color: inherit;
@@ -925,6 +955,7 @@ body.ie ._ibg img {
     visibility: hidden;
     transition: all 0.3s ease 0s;
     transform: translate(0, 10px);
+    pointer-events: none;
   }
 }
 .menu__sub-item:not(:last-child) {
