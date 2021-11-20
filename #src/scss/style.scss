@@ -26,9 +26,9 @@ $minWidth: 320px;
 $maxWidth: 1440;
 $maxWidthContainer: 1270;
 $md1: $maxWidthContainer + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
 
 $mainColor: #3a3a3a;
 $orangeColor: #E89F71;
@@ -45,6 +45,7 @@ body {
 	&._lock {
 		overflow: hidden;
 	}
+	background-color:  #F9F1E7;
 }
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 

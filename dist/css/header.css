@@ -192,6 +192,65 @@
   line-height: 120%;
 }
 
+@media (min-width: 991.98px) {
+  .header__search {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+}
+
+.search-form {
+  max-width: 473px;
+}
+
+.search-form__icon {
+  display: none;
+}
+
+.search-form__item {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-form__btn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45px;
+          flex: 0 0 45px;
+  height: 45px;
+  color: #333333;
+  font-size: 15px;
+}
+
+.search-form__input {
+  font-size: 14px;
+  color: #616161;
+  width: 100%;
+  padding: 0 20px 0 0;
+}
+
+.actions-header {
+  position: relative;
+  z-index: 5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  grid-auto-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.actions-header__item_user {
+  display: none;
+}
+
 /*
 //Burger
 .icon-menu {

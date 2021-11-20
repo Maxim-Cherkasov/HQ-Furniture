@@ -187,6 +187,7 @@ h6 {
 */
 body {
   color: #3a3a3a;
+  background-color: #F9F1E7;
 }
 
 body._lock {
@@ -239,7 +240,7 @@ body._lock {
   border-radius: 4px;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 991.98pxpx) {
   .select__title {
     font-size: 18px;
   }
@@ -303,7 +304,7 @@ body._lock {
   padding: 10px 0px 5px 0px;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 991.98pxpx) {
   .select__options {
     font-size: 18px;
   }
@@ -608,7 +609,7 @@ textarea.input {
   height: 1px;
 }
 
-@media (min-width: 991.98px) {
+@media (min-width: 991.98pxpx) {
   .quantity__button:hover::before, .quantity__button:hover::after {
     background-color: rgba(0, 0, 0, 0.5);
   }
@@ -1110,6 +1111,24 @@ body.ie ._ibg img {
   }
 }
 
+@media (min-width: 767.98px) {
+  .menu__item._hover .menu__sub-list {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .menu__item._hover .menu__arrow {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  .menu__item._hover .menu__arrow,
+  .menu__item._hover .menu__link {
+    color: #E89F71;
+  }
+}
+
 .menu__link {
   font-weight: 500;
   color: inherit;
@@ -1156,6 +1175,153 @@ body.ie ._ibg img {
 .menu__sub-link {
   color: #fff;
   line-height: 120%;
+}
+
+.header__search {
+  padding-right: 32px;
+}
+
+@media (max-width: 1270px) {
+  .header__search {
+    padding-right: calc(15px + 17 * ((100vw - 320px) / 950));
+  }
+}
+
+@media (min-width: 991.98px) {
+  .header__search {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+}
+
+.search-form {
+  max-width: 473px;
+}
+
+.search-form__icon {
+  display: none;
+}
+
+.search-form__item {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 991.98pxpx) {
+  .search-form__item {
+    -webkit-box-shadow: 0 0 5px rgba(212, 209, 205, 0.3);
+            box-shadow: 0 0 5px rgba(212, 209, 205, 0.3);
+  }
+}
+
+.search-form__btn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45px;
+          flex: 0 0 45px;
+  height: 45px;
+  color: #333333;
+  font-size: 15px;
+}
+
+.search-form__input {
+  font-size: 14px;
+  color: #616161;
+  width: 100%;
+  padding: 0 20px 0 0;
+}
+
+.actions-header {
+  position: relative;
+  z-index: 5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  grid-auto-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+}
+
+@media (max-width: 1270px) {
+  .actions-header {
+    gap: calc(15px + 17 * ((100vw - 320px) / 950));
+  }
+}
+
+.actions-header__item_favorites {
+  color: #262f56;
+  font-size: 24px;
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
+@media (any-hover: hover) {
+  .actions-header__item_favorites:hover {
+    color: #E89F71;
+  }
+}
+
+.actions-header__item_user {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 1270px) {
+  .actions-header__item_user {
+    width: calc(30px + 10 * ((100vw - 320px) / 950));
+  }
+}
+
+@media (max-width: 1270px) {
+  .actions-header__item_user {
+    height: calc(30px + 10 * ((100vw - 320px) / 950));
+  }
+}
+
+.cart-header__icon {
+  color: #262f56;
+  font-size: 24px;
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+  position: relative;
+  display: block;
+}
+
+@media (any-hover: hover) {
+  .cart-header__icon:hover {
+    color: #E89F71;
+  }
+}
+
+.cart-header__icon span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -10px;
+  right: -10px;
+  border-radius: 50%;
+  background-color: #E89F71;
+  color: #fff;
+  font-size: 12px;
 }
 
 /*
