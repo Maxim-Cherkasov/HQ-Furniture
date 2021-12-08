@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @use "sass:math";
+@use "sass:list";
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
@@ -983,6 +984,7 @@ body.ie ._ibg img {
   background: url("../img/icons/close.svg") 0 0 no-repeat;
 }
 
+@use "sass:math";
 .header {
   position: absolute;
   width: 100%;
@@ -1010,13 +1012,13 @@ body.ie ._ibg img {
   position: relative;
 }
 
-@media (min-height: 991.98px) {
+@media (max-width: 991.98px) {
   .header__body {
     min-height: 80px;
   }
 }
 
-@media (min-height: 767.98px) {
+@media (max-width: 767.98px) {
   .header__body {
     min-height: 50px;
   }
@@ -1034,7 +1036,7 @@ body.ie ._ibg img {
           align-items: center;
 }
 
-@media (min-width: 991.98px) {
+@media (max-width: 991.98px) {
   .header__main {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
@@ -1047,10 +1049,6 @@ body.ie ._ibg img {
   font-weight: 700;
   font-size: 24px;
   line-height: 120.83333%;
-}
-
-.header__search {
-  margin: 0 0 0 auto;
 }
 
 /*
@@ -1264,12 +1262,12 @@ body.ie ._ibg img {
     position: absolute;
     width: 100%;
     left: 0;
-    top: -100%;
+    top: -180%;
     z-index: 5;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.33s ease 0s;
+    transition: all 0.33s ease 0s;
   }
 }
 
