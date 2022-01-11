@@ -1716,6 +1716,17 @@ body.ie ._ibg img {
   }
 }
 
+.slider-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (max-width: 991.98px) {
+  .slider-main {
+    align-items: stretch;
+    flex-direction: column-reverse;
+  }
+}
 .slider-main__controls {
   margin: 0px 0px 20px 0px;
 }
@@ -1723,12 +1734,15 @@ body.ie ._ibg img {
   padding: 0px 0px 50% 0px;
 }
 .slider-main__content {
-  position: absolute;
+  min-width: 295px;
+  max-height: 300px;
+  overflow: auto;
   color: inherit;
   display: flex;
   flex-direction: column;
   padding: 24px;
   background: rgba(255, 255, 255, 0.9);
+  /* Если браузер поддерживает backdrop-filter */
 }
 @media (max-width: 1270px) {
   .slider-main__content {
