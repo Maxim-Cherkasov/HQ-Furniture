@@ -286,39 +286,35 @@ body.ie {
 	font-size: 12px;
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
-		// .slider-arrow_prev
-
-		&_prev {
-			&::before {
-				transform: rotate(90deg);
-			}
+	// .slider-arrow_prev
+	&_prev {
+		&::before {
+			transform: rotate(90deg);
 		}
-
-		// .slider-arrow_next
-
-		&_next {
-			&::before {
-				transform: rotate(-90deg);
-			}
+	}
+	// .slider-arrow_next
+	&_next {
+		&::before {
+			transform: rotate(-90deg);
 		}
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			color: #fff;
+			background-color: rgba(232, 159, 113, 1);
+		}
+	}
+	&_white {
+		box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
+		background-color: #fff;
 		@media (any-hover: hover) {
 			&:hover {
+				background-color: $orangeColor;
 				color: #fff;
-				background-color: rgba(232, 159, 113, 1);
 			}
 		}
-		&_white {
-			box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
-			background-color: #fff;
-			@media (any-hover: hover) {
-				&:hover {
-					background-color: $orangeColor;
-					color: #fff;
-				}
-			}
-		}
+	}
 }
-
 .swiper-pagination-bullets {
 	display: flex;
 	flex-wrap: wrap;
