@@ -135,8 +135,12 @@ body {
 		// .main-slider__content
 
 		&__content {
+			align-self: flex-start;
 			flex: 0 0 494px / 1240px * 100%;
 			@include adaptiv-value("margin-bottom", 80, 15, 1);
+			@media (max-width: $md2){
+				margin: 0 -15px;
+			}
 		}
 
 		// .main-slider__slider
@@ -144,7 +148,7 @@ body {
 		&__slider {
 			flex: 1 1 auto;
 			min-width: 0;
-			
+			align-self: flex-end;
 			@media (min-width: $md2) {
 				padding: 0px 0px 0px 32px;
 			}
@@ -232,7 +236,9 @@ body {
 				@include adaptiv-value("width", 934, 290, 1);
 			}
 		}
-
+		@media (max-width: $md2){
+			margin: 0 -15px;
+		}
 		// .slider-main__slide
 
 		&__slide {
@@ -242,7 +248,7 @@ body {
 		// .slider-main__image
 
 		&__image {
-			padding: 0px 0px 59.1% 0px;
+			padding: 0px 0px 61.1% 0px;
 		}
 
 		// .slider-main__content
@@ -310,7 +316,7 @@ body {
 	&__dotts {
 		flex: 1 1 auto;
 		@media (min-width: $md2) {
-			padding: 0px 0px 0px 0px;
+			padding: 0px 20px 0px 0px;
 		}
 		@media (max-width: $md2) {
 			justify-content: center;
