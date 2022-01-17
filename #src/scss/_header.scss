@@ -19,13 +19,14 @@
 				}
 			}
 		}
-	}
+	
 	.header__body {
 		min-height: 50px;
 		@media (min-width: $md2) {
 			min-height: 70px;
 		}
 	}
+}
 	// .header__wrapper
 
 	&__wrapper {
