@@ -308,3 +308,4 @@ exports.fonts = fontsBuild;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
+exports.json = json;
